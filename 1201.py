@@ -32,7 +32,7 @@ with col1:
     st.image(img,caption='富士山（山梨県）',use_column_width=True)
    
 with col2:
-    img=Image.open('ameharasi_kaigann.jpg')
+    img=Image.open('ameharasi_kaigann.JPG')
     st.image(img,caption='雨晴海岸（富山県）',use_column_width=True)
 
 with col3:
