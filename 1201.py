@@ -36,7 +36,7 @@ with col2:
     st.image(img,caption='雨晴海岸（富山県）',use_column_width=True)
 
 with col3:
-    img=Image.open('namaemake.JPG')
+    img=Image.open('namaemake.jpg')
     st.image(img,caption='恋人岬（新潟県）',use_column_width=True)
 
 st.subheader('使い方ガイド')
