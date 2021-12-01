@@ -195,6 +195,5 @@ if button1:
     directions = json.loads(response)
     
     for key in directions['routes']:
-        st.write("############")
         for key2 in key['legs']:
-            st.write(key2['distance']['text'])
+            st.title(key2['distance']['text'],'です！')
