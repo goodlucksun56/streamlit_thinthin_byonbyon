@@ -1,5 +1,3 @@
-
-
 import streamlit as st
 import urllib.request, json
 import urllib.parse
@@ -42,9 +40,14 @@ with col3:
 st.subheader('使い方ガイド')
 st.write('1.行きたい場所を選択')
 st.write('2.目的を選択')
-st.write('3.「検索！」ボタンをクリック')
-st.write('4.「検索！」ボタンの下に表示されるURLをクリック')
-st.write('5.旅でやりたいことを決めよう！')
+st.write('3.矢印の下にあるURLをクリック')
+st.write('4..旅でやりたいことを決めよう！')
+st.write('5.行き先が決まったら出発地をを入力')
+st.write('6.目的地を入力')
+st.write('7.距離検索をクリック')
+st.write('8.目的地までの距離が表示されるよ！')
+st.write('＊自動車で行った場合の距離です')
+
 
 st.subheader('旅の始まり')
 
@@ -58,6 +61,9 @@ want_to=st.selectbox(
     "目的は？",
     list(['食べ物','観光','アウトドア']))
 want_to,'のおすすめ'
+
+img=Image.open('sita.png')
+st.image(img,caption='',use_column_width=True)
 
 if where == '新潟県' and want_to == '食べ物':
     st.subheader('新潟旅行者が選ぶ！新潟で絶対に食べるべきグルメランキングTOP10')
@@ -196,4 +202,5 @@ if button1:
     
     for key in directions['routes']:
         for key2 in key['legs']:
-            st.title(key2['distance']['text'],'です！')
+            st.title(key2['distance']['text'])
+            
