@@ -62,8 +62,19 @@ want_to=st.selectbox(
     list(['食べ物','観光','アウトドア']))
 want_to,'のおすすめ'
 
-img=Image.open('sita.png')
-st.image(img,caption='',use_column_width=True)
+col1, col2, col3 = st.columns(3)
+
+with col1:
+    img=Image.open('sita.png')
+    st.image(img,caption='',use_column_width=True)
+   
+with col2:
+    img=Image.open('hakushi.jpg')
+    st.image(img,caption='',use_column_width=True)
+
+with col3:
+    img=Image.open('hakushi.jpg')
+    st.image(img,caption='',use_column_width=True)
 
 if where == '新潟県' and want_to == '食べ物':
     st.subheader('新潟旅行者が選ぶ！新潟で絶対に食べるべきグルメランキングTOP10')
