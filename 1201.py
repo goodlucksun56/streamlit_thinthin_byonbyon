@@ -185,14 +185,10 @@ if button1:
     #dep_time = st.text_input('出発時間を入力: yyyy/mm/dd hh:mm 形式 ')
     dtime = datetime.datetime.now()
     unix_time = int(dtime.timestamp())
-    
     travel_mode = "DRIVING"
-    
     nav_request = 'language=ja&origin={}&destination={}&mode={}&departure_time={}&key={}'.format(origin,destination,travel_mode,unix_time,api_key)
     nav_request = urllib.parse.quote_plus(nav_request, safe='=&')
     request = endpoint + nav_request
-    
-    st.write(request)
     
     #Google Maps Platform Directions APIを実行
     response = urllib.request.urlopen(request).read()
