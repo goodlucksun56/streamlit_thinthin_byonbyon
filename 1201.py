@@ -66,41 +66,6 @@ if button1:
         st.subheader('新潟旅行者が選ぶ！新潟で絶対に食べるべきグルメランキングTOP10')
         st.write('https://rtrp.jp/articles/6822/')
         
-         #Google Maps Platform Directions API endpoint
-    #endpoint = 'https://maps.googleapis.com/maps/api/directions/json?'
-    #api_key = 'AIzaSyBuoDH9eBgTU9zA3U0iARo4It-S2zb3seg'
-
-    #出発地、目的地を入力
-    #origin=st.text_input('出発地を入力: ').replace(' ','+')
-    #destination = st.text_input('目的地を入力: ').replace(' ','+')
-
-    #UNIX時間の算出
-    #dep_time = st.text_input('出発時間を入力: yyyy/mm/dd hh:mm 形式 ')
-    #dtime = datetime.datetime.strptime(dep_time, '%Y/%m/%d %H:%M')
-    #unix_time = int(dtime.timestamp())
-
-    #移動手段決定
-    #travel_mode_flag = st.text_input('移動手段: 1:walk,2:train').replace(' ','+')
-
-    #global travel_mode
-    #if travel_mode_flag == "1":
-       # travel_mode = "walking"
-    #elif travel_mode_flag == "2": 
-        #travel_mode = "transit"
-    #else:
-        #st.write("error")
-        #st.write("移動手段")
-        #st.write(travel_mode)
-
-    #nav_request = 'language=ja&origin={}&destination={}&mode={}&departure_time={}&key={}'.format(origin,destination,travel_mode,unix_time,api_key)
-    #nav_request = urllib.parse.quote_plus(nav_request, safe='=&')
-    #request = endpoint + nav_request
-
-    #Google Maps Platform Directions APIを実行
-    #response = urllib.request.urlopen(request).read()
-    #directions = json.loads(response)
-
-  
 
     elif where == '新潟県' and want_to == '観光':
         st.subheader('現地スタッフ厳選！新潟県のおすすめ観光スポットBEST40！')
