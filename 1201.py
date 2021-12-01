@@ -28,7 +28,7 @@ st.write("あなたは中部地方の魅力をどこまで知っていますか�
 col1, col2, col3 = st.columns(3)
 
 with col1:
-    img=Image.open('mt.fuji.jpg')
+    img=Image.open('mt.fuji.JPG')
     st.image(img,caption='富士山（山梨県）',use_column_width=True)
    
 with col2:
